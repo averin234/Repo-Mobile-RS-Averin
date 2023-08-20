@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="averin.sirs_pluit.com">
+    package="averin.sirs_gading1_pluit.com">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-feature
         android:name="android.hardware.camera2.full"

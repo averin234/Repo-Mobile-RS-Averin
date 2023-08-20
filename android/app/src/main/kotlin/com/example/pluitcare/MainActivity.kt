@@ -1,4 +1,4 @@
-package averin.sirs_pluit.com
+package averin.sirs_gading1_pluit.com
 
 import io.flutter.embedding.android.FlutterActivity
 

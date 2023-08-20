@@ -26,7 +26,7 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    namespace "averin.sirs_pluit.com"
+    namespace "averin.sirs_gading1_pluit.com"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
@@ -45,21 +45,21 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "averin.sirs_pluit.com"
+        applicationId "averin.sirs_gading1_pluit.com"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion 24
         targetSdkVersion 32
-        versionCode 59
-        versionName "1.1.2"
+        versionCode 61
+        versionName "1.1.4"
         multiDexEnabled true
     }
     signingConfigs {
         release {
-            storeFile file('C:/Users/irwan/Averin_dev.jks')
-            storePassword '48family'
-            keyAlias = 'Averin2023'
-            keyPassword '48family'
+            storeFile file('C:/Users/irwan/Averin_Gading.jks')
+            storePassword 'irwan123'
+            keyAlias = 'key0'
+            keyPassword 'irwan123'
         }
     }
     buildTypes {
