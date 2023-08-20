@@ -13,6 +13,7 @@ import 'package:pull_to_refresh/pull_to_refresh.dart';
 import '../../../data/componen/my_font_size.dart';
 import '../../../data/componen/my_style.dart';
 import '../../../routes/app_pages.dart';
+import '../../home/views/home_view.dart';
 
 class DaftarAntrianView extends StatefulWidget {
   const DaftarAntrianView({Key? key, this.title}) : super(key: key);
@@ -40,7 +41,9 @@ class _DaftarAntrianViewState extends State<DaftarAntrianView> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
-        Navigator.of(context).popUntil((route) => route.isFirst);
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => HomeView1()), // Ganti dengan halaman home Anda
+        );
         return true;
       },
       child: Scaffold(

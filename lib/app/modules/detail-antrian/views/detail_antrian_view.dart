@@ -7,6 +7,8 @@ import 'package:gadingcare/app/modules/detail-antrian/views/widgets/card_ticket_
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import '../../../data/componen/my_font_size.dart';
+import '../../daftar_antrian/views/daftar_antrian_view.dart';
+import '../../home/views/home_view.dart';
 import '../controllers/detail_antrian_controller.dart';
 
 class DetailAntrianView extends StatefulWidget {
@@ -33,7 +35,14 @@ class _DetailAntrianViewState extends State<DetailAntrianView> {
   final controller = Get.put(DetailAntrianController());
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return WillPopScope(
+        onWillPop: () async {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => DaftarAntrianView()), // Ganti dengan halaman home Anda
+      );
+      return true;
+    },
+    child: Scaffold(
       backgroundColor: Theme.of(context).brightness == Brightness.light
           ? Color(0xffecf8ff)
           : Color(0xff2C3333),
@@ -94,6 +103,7 @@ class _DetailAntrianViewState extends State<DetailAntrianView> {
             ),
           ],
         ),
+      ),
       ),
     );
   }

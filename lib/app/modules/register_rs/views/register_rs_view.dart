@@ -16,6 +16,7 @@ import 'package:gadingcare/app/modules/register_rs/views/widgets/widget_listview
 import 'package:gadingcare/app/modules/register_rs/views/widgets/widget_title_poli2.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import '../../../data/componen/my_font_size.dart';
+import '../../home/views/home_view.dart';
 
 class RegisterRsView extends StatefulWidget {
   const RegisterRsView({Key? key, this.title}) : super(key: key);
@@ -42,7 +43,14 @@ class _RegisterRsViewState extends State<RegisterRsView> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return WillPopScope(
+        onWillPop: () async {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => HomeView1()), // Ganti dengan halaman home Anda
+      );
+      return true;
+    },
+      child : Scaffold(
       backgroundColor: const Color(0xff4babe7),
       body: SmartRefresher(
         controller: _refreshController,
@@ -198,11 +206,12 @@ class _RegisterRsViewState extends State<RegisterRsView> {
                             );
                           }),
                         ]),
-                  ),
-                ],
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
