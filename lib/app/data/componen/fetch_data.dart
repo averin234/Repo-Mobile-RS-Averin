@@ -25,9 +25,9 @@ import 'package:gadingcare/app/data/model/regist_rs/dokter_by_name.dart';
 import 'package:gadingcare/app/routes/app_pages.dart';
 
 import '../model/login_and_regist/CheckUp.dart';
-
 class API {
-  static const _url = 'https://rsgading.sirs.co.id/';
+  static const _url = 'https://rsgading-dev.sirs.co.id/';
+  // static const _url = 'https://rsgading.sirs.co.id/';
   static const _baseUrl = '${_url}api/v1';
   static const _kodeKlinik = 'C00002';
   static const _getToken = '$_baseUrl/get-token.php';

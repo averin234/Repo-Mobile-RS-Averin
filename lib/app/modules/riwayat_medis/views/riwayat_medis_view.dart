@@ -21,7 +21,6 @@ class RiwayatMedisView extends StatefulWidget {
   @override
   _RiwayatMedisViewState createState() => _RiwayatMedisViewState();
 }
-
 class _RiwayatMedisViewState extends State<RiwayatMedisView> {
   // this enable our app to able to pull down
   late RefreshController _refreshController; // the refresh controller
