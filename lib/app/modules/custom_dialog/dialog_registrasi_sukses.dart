@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:gadingcare/app/routes/app_pages.dart';
+import 'package:rsaverin/app/routes/app_pages.dart';
 
 class DialogSuksesRegis extends StatelessWidget {
   const DialogSuksesRegis({super.key});

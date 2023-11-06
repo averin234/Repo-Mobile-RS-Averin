@@ -1,9 +1,9 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:gadingcare/app/data/componen/publics.dart';
-import 'package:gadingcare/app/data/model/regist_rs/all_dokter_klinik.dart';
-import 'package:gadingcare/app/data/model/regist_rs/antrian_dokter.dart';
+import 'package:rsaverin/app/data/componen/publics.dart';
+import 'package:rsaverin/app/data/model/regist_rs/all_dokter_klinik.dart';
+import 'package:rsaverin/app/data/model/regist_rs/antrian_dokter.dart';
 
 class DetailPoliController extends GetxController {
   //TODO: Implement DetailPoliController

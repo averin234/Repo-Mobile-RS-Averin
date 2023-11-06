@@ -2,7 +2,7 @@ import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:gadingcare/app/modules/daftar_antrian/controllers/daftar_antrian_controller.dart';
+import 'package:rsaverin/app/modules/daftar_antrian/controllers/daftar_antrian_controller.dart';
 
 class HorizontalWeekCalendarPackage1 extends GetView<DaftarAntrianController> {
   const HorizontalWeekCalendarPackage1({super.key});

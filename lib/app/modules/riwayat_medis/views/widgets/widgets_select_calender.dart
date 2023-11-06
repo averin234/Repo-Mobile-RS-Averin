@@ -2,7 +2,7 @@ import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:gadingcare/app/modules/riwayat_medis/controllers/riwayat_medis_controller.dart';
+import 'package:rsaverin/app/modules/riwayat_medis/controllers/riwayat_medis_controller.dart';
 
 class HorizontalWeekCalendarPackage extends GetView<RiwayatMedisController> {
   const HorizontalWeekCalendarPackage({super.key});

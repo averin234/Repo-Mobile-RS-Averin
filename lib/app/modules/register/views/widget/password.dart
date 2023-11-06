@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/modules/register/controllers/register_controller.dart';
+import 'package:rsaverin/app/modules/register/controllers/register_controller.dart';
 
 class MyPassWord extends GetView<RegisterController> {
   const MyPassWord({super.key});

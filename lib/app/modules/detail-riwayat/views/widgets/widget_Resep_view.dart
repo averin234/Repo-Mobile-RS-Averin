@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/data/model/mr_pasien/detailRiwayat.dart';
+import 'package:rsaverin/app/data/model/mr_pasien/detailRiwayat.dart';
 
 class CardResep extends StatelessWidget {
   final List<Resep> resep;

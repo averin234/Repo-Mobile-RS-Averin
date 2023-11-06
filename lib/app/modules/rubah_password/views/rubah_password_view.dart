@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gadingcare/app/data/componen/images.dart';
-import 'package:gadingcare/app/routes/app_pages.dart';
+import 'package:rsaverin/app/data/componen/images.dart';
+import 'package:rsaverin/app/routes/app_pages.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -34,12 +34,14 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
-        onWillPop: () async {
-          Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => HomeView1()), // Ganti dengan halaman home Anda
-          );
-          return true;
-        },
+      onWillPop: () async {
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+              builder: (context) =>
+                  HomeView1()), // Ganti dengan halaman home Anda
+        );
+        return true;
+      },
       child: Scaffold(
         backgroundColor: Theme.of(context).brightness == Brightness.light
             ? Color(0xfff6f9fe)
@@ -113,7 +115,7 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
                             height: 5,
                           ),
                           TextScroll(
-                            'Data diri anda terekam di database Rumah Sakit Gading Pluit, Mohon periksa kembali data diri anda, dan lakukan refresh saat melakukan perubahan data diri',
+                            'Data diri anda terekam di database Rumah Sakit Averin, Mohon periksa kembali data diri anda, dan lakukan refresh saat melakukan perubahan data diri',
                             textDirection: TextDirection.ltr,
                             style: GoogleFonts.nunito(
                                 fontWeight: FontWeight.bold,

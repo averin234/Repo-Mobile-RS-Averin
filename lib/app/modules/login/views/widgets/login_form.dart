@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:launch_review/launch_review.dart';
-import 'package:gadingcare/app/data/componen/data_regist_model.dart';
-import 'package:gadingcare/app/data/componen/fetch_data.dart';
-import 'package:gadingcare/app/data/componen/local_storage.dart';
-import 'package:gadingcare/app/data/model/login_and_regist/akses_px.dart';
-import 'package:gadingcare/app/modules/login/controllers/login_controller.dart';
+import 'package:rsaverin/app/data/componen/data_regist_model.dart';
+import 'package:rsaverin/app/data/componen/fetch_data.dart';
+import 'package:rsaverin/app/data/componen/local_storage.dart';
+import 'package:rsaverin/app/data/model/login_and_regist/akses_px.dart';
+import 'package:rsaverin/app/modules/login/controllers/login_controller.dart';
 import '../../../../routes/app_pages.dart';
 import '../constants.dart';
 import 'custom_button.dart';
@@ -208,7 +208,7 @@ class LoginForm extends StatelessWidget {
               child: Column(
                 children: [
                   const Text(
-                      "Maaf Menganggu penggunaan Aplikasi GP Care\nMohon Segera Update Aplikasi",
+                      "Maaf Menganggu penggunaan Aplikasi RS Averin\nMohon Segera Update Aplikasi",
                       style:
                           TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center),
@@ -404,7 +404,7 @@ Widget LupaPassword(context) {
                 }
               } else {
                 Get.snackbar('500',
-                    'Email yg di masukan harus sesuai dengan akun yang sudah terdaftar di Aplikasi GP Care');
+                    'Email yg di masukan harus sesuai dengan akun yang sudah terdaftar di Aplikasi RS Averin');
               }
             },
             child: SizedBox(

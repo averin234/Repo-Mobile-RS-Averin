@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gadingcare/app/data/componen/publics.dart';
+import 'package:rsaverin/app/data/componen/publics.dart';
 import 'package:get/get.dart';
 
 class SettingProfileController extends GetxController {

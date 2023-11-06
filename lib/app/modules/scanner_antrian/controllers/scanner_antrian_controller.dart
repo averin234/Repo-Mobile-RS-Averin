@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
-import 'package:gadingcare/app/data/componen/publics.dart';
+import 'package:rsaverin/app/data/componen/publics.dart';
 
 class ScannerAntrianController extends GetxController {
   //TODO: Implement ScannerAntrianController

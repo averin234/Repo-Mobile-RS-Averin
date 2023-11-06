@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:gadingcare/app/routes/app_pages.dart';
+import 'package:rsaverin/app/routes/app_pages.dart';
 
 class DialogInginLogin extends StatelessWidget {
   const DialogInginLogin({super.key});
@@ -30,7 +30,7 @@ class DialogInginLogin extends StatelessWidget {
               height: 200,
             ),
             const Text(
-                "Anda Belum Terdaftar atau Login di Aplikasi SIRS Rumah Sakit Gading Pluit",
+                "Anda Belum Terdaftar atau Login di Aplikasi SIRS Rumah Sakit Averin",
                 style: TextStyle(
                     fontSize: 15,
                     decoration: TextDecoration.none,

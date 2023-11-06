@@ -16,9 +16,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
-        android:label="GP Care"
+        android:label="RS Averin"
         android:name="${applicationName}"
-        android:icon="@mipmap/icon_app">
+        android:icon="@mipmap/icon_apps">
         <activity
             android:name=".MainActivity"
             android:exported="true"

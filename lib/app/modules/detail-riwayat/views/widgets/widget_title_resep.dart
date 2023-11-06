@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gadingcare/app/data/componen/my_style.dart';
+import 'package:rsaverin/app/data/componen/my_style.dart';
 
 class WidgetTitleResep extends StatefulWidget {
   const WidgetTitleResep({Key? key}) : super(key: key);

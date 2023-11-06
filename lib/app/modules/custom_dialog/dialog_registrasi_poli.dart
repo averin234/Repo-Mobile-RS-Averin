@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:gadingcare/app/data/componen/fetch_data.dart';
-import 'package:gadingcare/app/data/model/regist_rs/daftar_px.dart';
-import 'package:gadingcare/app/modules/custom_dialog/dialog_registrasi_gagal_regis.dart';
-import 'package:gadingcare/app/modules/custom_dialog/dialog_registrasi_sukses.dart';
-import 'package:gadingcare/app/modules/detail-poli/controllers/detail_poli_controller.dart';
+import 'package:rsaverin/app/data/componen/fetch_data.dart';
+import 'package:rsaverin/app/data/model/regist_rs/daftar_px.dart';
+import 'package:rsaverin/app/modules/custom_dialog/dialog_registrasi_gagal_regis.dart';
+import 'package:rsaverin/app/modules/custom_dialog/dialog_registrasi_sukses.dart';
+import 'package:rsaverin/app/modules/detail-poli/controllers/detail_poli_controller.dart';
 
 class DialogRegisPoli extends GetView<DetailPoliController> {
   const DialogRegisPoli({super.key});
@@ -36,7 +36,7 @@ class DialogRegisPoli extends GetView<DetailPoliController> {
                   height: 200, // default is 15 FPS
                 ),
                 const Text(
-                    "Anda Belum Tedaftar Sebagai Pasien di Rumah Sakit Gading Pluit",
+                    "Anda Belum Tedaftar Sebagai Pasien di Rumah Sakit Averin",
                     style: TextStyle(
                         color: Colors.black45,
                         fontSize: 18,
@@ -103,7 +103,7 @@ class DialogRegisPoli extends GetView<DetailPoliController> {
                             kodeDokter: controller.items.kodeDokter ?? '',
                             kodeBagian: controller.items.kodeBagian ?? '',
                             namaBagian: controller.items.namaBagian ?? '',
-                            namaKlinik: 'Rumah Sakit Gading Pluit',
+                            namaKlinik: 'Rumah Sakit Averin',
                             namaDokter: controller.items.namaPegawai ?? '',
                             durasi:
                                 controller.listAntrianDokter.value.durasi ?? '',

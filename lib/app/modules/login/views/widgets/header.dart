@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/routes/app_pages.dart';
+import 'package:rsaverin/app/routes/app_pages.dart';
 
 import '../constants.dart';
 import 'fade_slide_transition.dart';
@@ -42,7 +42,7 @@ class Headerlogin extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Image.asset(
-                'assets/images/logo_gading.jpg',
+                'assets/images/logo_averin.png',
                 height: 60,
                 width: 100,
               ),
@@ -51,7 +51,7 @@ class Headerlogin extends StatelessWidget {
                 animation: animation,
                 additionalOffset: 0.0,
                 child: Text(
-                  'Rumah Sakit Gading Pluit',
+                  'Rumah Sakit Averin',
                   style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                         color: kBlack,
                         fontWeight: FontWeight.bold,

@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
-import 'package:gadingcare/app/modules/shammer/shimmer_antri.dart';
-import 'package:gadingcare/app/modules/shammer/shimmer_menu.dart';
-import 'package:gadingcare/app/modules/shammer/shimmer_nama_rs.dart';
-import 'package:gadingcare/app/modules/shammer/shimmer_slider.dart';
+import 'package:rsaverin/app/modules/shammer/shimmer_antri.dart';
+import 'package:rsaverin/app/modules/shammer/shimmer_menu.dart';
+import 'package:rsaverin/app/modules/shammer/shimmer_nama_rs.dart';
+import 'package:rsaverin/app/modules/shammer/shimmer_slider.dart';
 
 import '../../data/componen/my_style.dart';
 

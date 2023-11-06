@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/data/componen/data_regist_model.dart';
-import 'package:gadingcare/app/data/componen/images.dart';
-import 'package:gadingcare/app/data/model/mr_pasien/detailRiwayat.dart';
+import 'package:rsaverin/app/data/componen/data_regist_model.dart';
+import 'package:rsaverin/app/data/componen/images.dart';
+import 'package:rsaverin/app/data/model/mr_pasien/detailRiwayat.dart';
 
 class CardDetailViewRiwayat extends StatelessWidget {
   final Px px;

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:gadingcare/app/data/componen/fetch_data.dart';
+import 'package:rsaverin/app/data/componen/fetch_data.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/data/componen/data_regist_model.dart';
-import 'package:gadingcare/app/data/componen/images.dart';
-import 'package:gadingcare/app/data/componen/local_storage.dart';
-import 'package:gadingcare/app/data/componen/publics.dart';
+import 'package:rsaverin/app/data/componen/data_regist_model.dart';
+import 'package:rsaverin/app/data/componen/images.dart';
+import 'package:rsaverin/app/data/componen/local_storage.dart';
+import 'package:rsaverin/app/data/componen/publics.dart';
 
 import '../../../data/componen/my_font_size.dart';
 import '../../../routes/app_pages.dart';
@@ -34,7 +34,7 @@ class _SettingProfileViewState extends State<SettingProfileView> {
         return; // If focus is on text field, dont unfocus
       }
       textFieldFocusNode.canRequestFocus =
-      false; // Prevents focus if tap on eye
+          false; // Prevents focus if tap on eye
     });
   }
 
@@ -97,9 +97,9 @@ class _SettingProfileViewState extends State<SettingProfileView> {
                             controller.dataRegist.value.fotoPasien != 'null'
                                 ? controller.dataRegist.value.fotoPasien!
                                 : controller.dataRegist.value.jenisKelamin ==
-                                'L'
-                                ? Avatar.lakiLaki
-                                : Avatar.perempuan,
+                                        'L'
+                                    ? Avatar.lakiLaki
+                                    : Avatar.perempuan,
                           ),
                         ),
                         const SizedBox(
@@ -391,12 +391,12 @@ class _SettingProfileViewState extends State<SettingProfileView> {
                       padding: EdgeInsets.all(20),
                       child: Center(
                           child: Column(
-                            children: [
-                              Text('Aplikasi masih pada tahap mengembangan'),
-                              Text('mohon maaf atas ketidak nyamanan '),
-                              Text('saat menggunakan aplikasi Pluit Care '),
-                            ],
-                          )),
+                        children: [
+                          Text('Aplikasi masih pada tahap mengembangan'),
+                          Text('mohon maaf atas ketidak nyamanan '),
+                          Text('saat menggunakan aplikasi Pluit Care '),
+                        ],
+                      )),
                     ),
                   ],
                 ),
@@ -423,214 +423,213 @@ class _SettingProfileViewState extends State<SettingProfileView> {
               children: [
                 SingleChildScrollView(
                     child: Center(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.only(left: 15),
+                        child: Text("Password Lama",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            )),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Row(
                         children: [
-                          const Padding(
-                            padding: EdgeInsets.only(left: 15),
-                            child: Text("Password Lama",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                )),
-                          ),
                           const SizedBox(
-                            height: 10,
+                            width: 5,
                           ),
-                          Row(
-                            children: [
-                              const SizedBox(
-                                width: 5,
-                              ),
-                              Expanded(
-                                child: Container(
-                                  margin: const EdgeInsets.only(left: 10),
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(10),
-                                    border:
+                          Expanded(
+                            child: Container(
+                              margin: const EdgeInsets.only(left: 10),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10),
+                                border:
                                     Border.all(color: const Color(0x6cc7d1db)),
-                                  ),
-                                  child: TextFormField(
-                                    obscureText: _obscured,
-                                    controller: controller.pwlamaController,
-                                    keyboardType: TextInputType.visiblePassword,
-                                    textInputAction: TextInputAction.done,
-                                    decoration: InputDecoration(
-                                      suffixIcon: Padding(
-                                        padding:
+                              ),
+                              child: TextFormField(
+                                obscureText: _obscured,
+                                controller: controller.pwlamaController,
+                                keyboardType: TextInputType.visiblePassword,
+                                textInputAction: TextInputAction.done,
+                                decoration: InputDecoration(
+                                  suffixIcon: Padding(
+                                    padding:
                                         const EdgeInsets.fromLTRB(0, 0, 4, 0),
-                                        child: GestureDetector(
-                                          onTap: _toggleObscured,
-                                          child: Icon(
-                                            _obscured
-                                                ? Icons.visibility_off_rounded
-                                                : Icons.visibility_rounded,
-                                            size: 24,
-                                          ),
-                                        ),
+                                    child: GestureDetector(
+                                      onTap: _toggleObscured,
+                                      child: Icon(
+                                        _obscured
+                                            ? Icons.visibility_off_rounded
+                                            : Icons.visibility_rounded,
+                                        size: 24,
                                       ),
-                                      border: InputBorder.none,
-                                      focusedBorder: InputBorder.none,
-                                      enabledBorder: InputBorder.none,
-                                      errorBorder: InputBorder.none,
-                                      disabledBorder: InputBorder.none,
-                                      contentPadding: EdgeInsets.only(
-                                          left: 15, bottom: 11, top: 13, right: 15),
-                                      filled: true,
-                                      fillColor: Colors.transparent,
                                     ),
                                   ),
+                                  border: InputBorder.none,
+                                  focusedBorder: InputBorder.none,
+                                  enabledBorder: InputBorder.none,
+                                  errorBorder: InputBorder.none,
+                                  disabledBorder: InputBorder.none,
+                                  contentPadding: EdgeInsets.only(
+                                      left: 15, bottom: 11, top: 13, right: 15),
+                                  filled: true,
+                                  fillColor: Colors.transparent,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 10,
-                              ),
-                            ],
+                            ),
                           ),
                           const SizedBox(
-                            height: 10,
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.only(left: 15),
-                            child: Text("Password Baru",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                )),
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          Row(
-                            children: [
-                              const SizedBox(
-                                width: 5,
-                              ),
-                              Expanded(
-                                child: Container(
-                                  margin: const EdgeInsets.only(left: 10),
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(10),
-                                    border:
-                                    Border.all(color: const Color(0x6cc7d1db)),
-                                  ),
-                                  child: TextFormField(
-                                    obscureText: _obscured,
-                                    controller: controller.pwbaruController,
-                                    keyboardType: TextInputType.visiblePassword,
-                                    textInputAction: TextInputAction.done,
-                                    decoration: InputDecoration(
-                                      suffixIcon: Padding(
-                                        padding:
-                                        const EdgeInsets.fromLTRB(0, 0, 4, 0),
-                                        child: GestureDetector(
-                                          onTap: _toggleObscured,
-                                          child: Icon(
-                                            _obscured
-                                                ? Icons.visibility_off_rounded
-                                                : Icons.visibility_rounded,
-                                            size: 24,
-                                          ),
-                                        ),
-                                      ),
-                                      border: InputBorder.none,
-                                      focusedBorder: InputBorder.none,
-                                      enabledBorder: InputBorder.none,
-                                      errorBorder: InputBorder.none,
-                                      disabledBorder: InputBorder.none,
-                                      contentPadding: EdgeInsets.only(
-                                          left: 15, bottom: 11, top: 13, right: 15),
-                                      filled: true,
-                                      fillColor: Colors.transparent,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 10,
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.only(left: 15),
-                            child: Text("Comfirm Password Baru",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                )),
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          Row(
-                            children: [
-                              const SizedBox(
-                                width: 5,
-                              ),
-                              Expanded(
-                                child: Container(
-                                  margin: const EdgeInsets.only(left: 10),
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(10),
-                                    border:
-                                    Border.all(color: const Color(0x6cc7d1db)),
-                                  ),
-                                  child: TextFormField(
-                                    obscureText: _obscured,
-                                    controller: controller.confirmpwbaruController,
-                                    keyboardType: TextInputType.visiblePassword,
-                                    textInputAction: TextInputAction.done,
-                                    decoration: InputDecoration(
-                                      suffixIcon: Padding(
-                                        padding:
-                                        const EdgeInsets.fromLTRB(0, 0, 4, 0),
-                                        child: GestureDetector(
-                                          onTap: _toggleObscured,
-                                          child: Icon(
-                                            _obscured
-                                                ? Icons.visibility_off_rounded
-                                                : Icons.visibility_rounded,
-                                            size: 24,
-                                          ),
-                                        ),
-                                      ),
-                                      border: InputBorder.none,
-                                      focusedBorder: InputBorder.none,
-                                      enabledBorder: InputBorder.none,
-                                      errorBorder: InputBorder.none,
-                                      disabledBorder: InputBorder.none,
-                                      contentPadding: EdgeInsets.only(
-                                          left: 15, bottom: 11, top: 13, right: 15),
-                                      filled: true,
-                                      fillColor: Colors.transparent,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 10,
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
-                            height: 10,
+                            width: 10,
                           ),
                         ],
                       ),
-                    )),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 15),
+                        child: Text("Password Baru",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            )),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        children: [
+                          const SizedBox(
+                            width: 5,
+                          ),
+                          Expanded(
+                            child: Container(
+                              margin: const EdgeInsets.only(left: 10),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10),
+                                border:
+                                    Border.all(color: const Color(0x6cc7d1db)),
+                              ),
+                              child: TextFormField(
+                                obscureText: _obscured,
+                                controller: controller.pwbaruController,
+                                keyboardType: TextInputType.visiblePassword,
+                                textInputAction: TextInputAction.done,
+                                decoration: InputDecoration(
+                                  suffixIcon: Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(0, 0, 4, 0),
+                                    child: GestureDetector(
+                                      onTap: _toggleObscured,
+                                      child: Icon(
+                                        _obscured
+                                            ? Icons.visibility_off_rounded
+                                            : Icons.visibility_rounded,
+                                        size: 24,
+                                      ),
+                                    ),
+                                  ),
+                                  border: InputBorder.none,
+                                  focusedBorder: InputBorder.none,
+                                  enabledBorder: InputBorder.none,
+                                  errorBorder: InputBorder.none,
+                                  disabledBorder: InputBorder.none,
+                                  contentPadding: EdgeInsets.only(
+                                      left: 15, bottom: 11, top: 13, right: 15),
+                                  filled: true,
+                                  fillColor: Colors.transparent,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 15),
+                        child: Text("Comfirm Password Baru",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            )),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        children: [
+                          const SizedBox(
+                            width: 5,
+                          ),
+                          Expanded(
+                            child: Container(
+                              margin: const EdgeInsets.only(left: 10),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10),
+                                border:
+                                    Border.all(color: const Color(0x6cc7d1db)),
+                              ),
+                              child: TextFormField(
+                                obscureText: _obscured,
+                                controller: controller.confirmpwbaruController,
+                                keyboardType: TextInputType.visiblePassword,
+                                textInputAction: TextInputAction.done,
+                                decoration: InputDecoration(
+                                  suffixIcon: Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(0, 0, 4, 0),
+                                    child: GestureDetector(
+                                      onTap: _toggleObscured,
+                                      child: Icon(
+                                        _obscured
+                                            ? Icons.visibility_off_rounded
+                                            : Icons.visibility_rounded,
+                                        size: 24,
+                                      ),
+                                    ),
+                                  ),
+                                  border: InputBorder.none,
+                                  focusedBorder: InputBorder.none,
+                                  enabledBorder: InputBorder.none,
+                                  errorBorder: InputBorder.none,
+                                  disabledBorder: InputBorder.none,
+                                  contentPadding: EdgeInsets.only(
+                                      left: 15, bottom: 11, top: 13, right: 15),
+                                  filled: true,
+                                  fillColor: Colors.transparent,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                    ],
+                  ),
+                )),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Padding(
                       padding:
-                      const EdgeInsets.only(right: 10, left: 10, top: 20),
+                          const EdgeInsets.only(right: 10, left: 10, top: 20),
                       child: GestureDetector(
                         onTap: () async {
-                          if (
-                          controller.pwbaruController.text.isNotEmpty &&
+                          if (controller.pwbaruController.text.isNotEmpty &&
                               controller
                                   .confirmpwbaruController.text.isNotEmpty) {
                             Get.defaultDialog(
@@ -640,8 +639,8 @@ class _SettingProfileViewState extends State<SettingProfileView> {
                               barrierDismissible: true,
                             );
                             final postUbahPassword = await API.postUbahPassword(
-                              email: Publics
-                                  .controller.getDataRegist.value.password ??
+                              email: Publics.controller.getDataRegist.value
+                                      .password ??
                                   '',
                               pw_baru: controller.pwbaruController.text,
                               pw_lama: controller.pwlamaController.text,
@@ -695,95 +694,95 @@ class _SettingProfileViewState extends State<SettingProfileView> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text("Apakah anda ingin Logout ?",
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.center),
-                const SizedBox(
-                  height: 10,
-                ),
-                Image.asset(
-                  "assets/images/logout_apps.png",
-                  gaplessPlayback: true,
-                  fit: BoxFit.fitHeight,
-                  height: 170,
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right: 70, left: 10, top: 20),
-                      child: GestureDetector(
-                        onTap: () => Get.back(),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(7),
-                            color: Colors.blue,
-                          ),
-                          child: const Column(
-                            children: [
-                              Padding(
-                                padding: EdgeInsets.all(16),
-                                child: Text(
-                                  "Kembali",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
+            const Text("Apakah anda ingin Logout ?",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center),
+            const SizedBox(
+              height: 10,
+            ),
+            Image.asset(
+              "assets/images/logout_apps.png",
+              gaplessPlayback: true,
+              fit: BoxFit.fitHeight,
+              height: 170,
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(right: 70, left: 10, top: 20),
+                  child: GestureDetector(
+                    onTap: () => Get.back(),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(7),
+                        color: Colors.blue,
+                      ),
+                      child: const Column(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.all(16),
+                            child: Text(
+                              "Kembali",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
                               ),
-                            ],
+                            ),
                           ),
-                        ),
+                        ],
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 10, left: 10, top: 20),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(7),
-                          color: Colors.redAccent,
-                        ),
-                        child: GestureDetector(
-                          onTap: () async {
-                            final getRegist = Publics.controller.getDataRegist;
-                            await LocalStorages.boxDataRegist.erase();
-                            await LocalStorages.boxToken.erase();
-                            await LocalStorages.setDataRegist(
-                              DataRegist(
-                                email: getRegist.value.email,
-                                password: getRegist.value.password,
-                                ingatSaya: getRegist.value.ingatSaya,
-                              ),
-                            );
-                            Publics.controller.getDataRegist.value =
-                                LocalStorages.getDataRegist;
-                            Publics.controller.getToken.value =
-                                LocalStorages.getToken;
-                            Get.offAllNamed(Routes.LOGIN);
-                          },
-                          child: const Column(
-                            children: [
-                              Padding(
-                                padding: EdgeInsets.all(16),
-                                child: Text(
-                                  "Logout",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(right: 10, left: 10, top: 20),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(7),
+                      color: Colors.redAccent,
+                    ),
+                    child: GestureDetector(
+                      onTap: () async {
+                        final getRegist = Publics.controller.getDataRegist;
+                        await LocalStorages.boxDataRegist.erase();
+                        await LocalStorages.boxToken.erase();
+                        await LocalStorages.setDataRegist(
+                          DataRegist(
+                            email: getRegist.value.email,
+                            password: getRegist.value.password,
+                            ingatSaya: getRegist.value.ingatSaya,
                           ),
-                        ),
+                        );
+                        Publics.controller.getDataRegist.value =
+                            LocalStorages.getDataRegist;
+                        Publics.controller.getToken.value =
+                            LocalStorages.getToken;
+                        Get.offAllNamed(Routes.LOGIN);
+                      },
+                      child: const Column(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.all(16),
+                            child: Text(
+                              "Logout",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                  ],
+                  ),
                 ),
-              ])),
+              ],
+            ),
+          ])),
     );
   }
 

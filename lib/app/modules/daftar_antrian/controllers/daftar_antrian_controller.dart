@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:gadingcare/app/data/componen/publics.dart';
+import 'package:rsaverin/app/data/componen/publics.dart';
 
 class DaftarAntrianController extends GetxController {
   //TODO: Implement DaftarAntrianController

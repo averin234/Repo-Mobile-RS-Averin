@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:gadingcare/app/data/componen/publics.dart';
+import 'package:rsaverin/app/data/componen/publics.dart';
 
 class LoginController extends GetxController {
   final usernameController = TextEditingController();

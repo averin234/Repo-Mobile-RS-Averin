@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/data/componen/fetch_data.dart';
-import 'package:gadingcare/app/modules/register/views/widget/password.dart';
-import 'package:gadingcare/app/modules/register/views/widget/register.dart';
-import 'package:gadingcare/app/routes/app_pages.dart';
+import 'package:rsaverin/app/data/componen/fetch_data.dart';
+import 'package:rsaverin/app/modules/register/views/widget/password.dart';
+import 'package:rsaverin/app/modules/register/views/widget/register.dart';
+import 'package:rsaverin/app/routes/app_pages.dart';
 
 import '../controllers/register_controller.dart';
 

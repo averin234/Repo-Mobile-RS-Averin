@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/data/componen/fetch_data.dart';
-import 'package:gadingcare/app/data/model/homepage/poli.dart';
-import 'package:gadingcare/app/modules/register_rs/controllers/register_rs_controller.dart';
+import 'package:rsaverin/app/data/componen/fetch_data.dart';
+import 'package:rsaverin/app/data/model/homepage/poli.dart';
+import 'package:rsaverin/app/modules/register_rs/controllers/register_rs_controller.dart';
 
 class DropDownListExample extends StatefulWidget {
   const DropDownListExample({

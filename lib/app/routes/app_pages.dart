@@ -1,5 +1,5 @@
-import 'package:gadingcare/app/modules/info_pluitcare/bindings/info_pluitcare_binding.dart';
-import 'package:gadingcare/app/modules/info_pluitcare/views/info_pluitcare_view.dart';
+import 'package:rsaverin/app/modules/info_pluitcare/bindings/info_pluitcare_binding.dart';
+import 'package:rsaverin/app/modules/info_pluitcare/views/info_pluitcare_view.dart';
 import 'package:get/get.dart';
 
 import '../modules/daftar_antrian/bindings/daftar_antrian_binding.dart';
@@ -91,9 +91,9 @@ class AppPages {
       binding: ProfilePasienBinding(),
     ),
     GetPage(
-      name: _Paths.INFO_gadingcare,
-      page: () => const InfogadingcareView(),
-      binding: InfogadingcareBinding(),
+      name: _Paths.INFO_rsaverin,
+      page: () => const InforsaverinView(),
+      binding: InforsaverinBinding(),
     ),
     GetPage(
       name: _Paths.DETAIL_RIWAYAT,

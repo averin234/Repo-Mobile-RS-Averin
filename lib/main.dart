@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:gadingcare/app/data/componen/fetch_data.dart';
-import 'package:gadingcare/app/data/componen/publics.dart';
-import 'package:gadingcare/app/data/model/profile_pasien/data_px.dart';
+import 'package:rsaverin/app/data/componen/fetch_data.dart';
+import 'package:rsaverin/app/data/componen/publics.dart';
+import 'package:rsaverin/app/data/model/profile_pasien/data_px.dart';
 import 'app/routes/app_pages.dart';
 
 void main() async {
@@ -16,21 +16,21 @@ void main() async {
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]);
-  await GetStorage.init('token_pluit');
-  await GetStorage.init('dataRegist_pluit');
-  DataPx cekData = await API.getDataPx(
+  await GetStorage.init('token_gading');
+  await GetStorage.init('dataRegist_gading');
+  DataPx cekData = await API.cekDataPx(
       noKtp: Publics.controller.getDataRegist.value.noKtp ?? '');
-  runApp(MyApp(msg: cekData.msg ?? 'Invalid token: Expired'));
+  runApp(MyApp(code: cekData.code ?? 500));
 }
 
 class MyApp extends StatelessWidget {
-  final String? msg;
-  const MyApp({super.key, this.msg});
+  final int? code;
+  const MyApp({super.key, this.code});
 
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'GP Care',
+      title: 'RS Averin',
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
           color: Colors.white,
@@ -43,10 +43,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // themeMode: ThemeMode.light,
       // ...
-      initialRoute: msg == 'Invalid token: Expired' ||
-              msg == 'Invalid token: Incomplete segments'
-          ? Routes.NO_HOME
-          : Routes.HOME,
+      initialRoute: code == 500 ? Routes.NO_HOME : Routes.HOME,
       getPages: AppPages.routes,
     );
   }

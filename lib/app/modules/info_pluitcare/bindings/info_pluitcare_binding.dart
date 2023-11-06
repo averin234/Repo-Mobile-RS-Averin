@@ -1,11 +1,11 @@
-import 'package:gadingcare/app/modules/info_pluitcare/controllers/info_pluitcare_controller.dart';
+import 'package:rsaverin/app/modules/info_pluitcare/controllers/info_pluitcare_controller.dart';
 import 'package:get/get.dart';
 
-class InfogadingcareBinding extends Bindings {
+class InforsaverinBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut<InfogadingcareController>(
-      () => InfogadingcareController(),
+    Get.lazyPut<InforsaverinController>(
+      () => InforsaverinController(),
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:gadingcare/app/data/model/regist_rs/daftar_px.dart';
+import 'package:rsaverin/app/data/model/regist_rs/daftar_px.dart';
 
 class DialogGagalRegis extends StatelessWidget {
   final DaftarPx daftarPx;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/data/componen/my_font_size.dart';
-import 'package:gadingcare/app/data/componen/my_style.dart';
+import 'package:rsaverin/app/data/componen/my_font_size.dart';
+import 'package:rsaverin/app/data/componen/my_style.dart';
 
 import '../../../../routes/app_pages.dart';
 

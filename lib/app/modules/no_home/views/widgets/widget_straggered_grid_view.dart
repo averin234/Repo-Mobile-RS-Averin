@@ -3,9 +3,9 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/data/componen/my_colors.dart';
-import 'package:gadingcare/app/data/componen/my_font_size.dart';
-import 'package:gadingcare/app/routes/app_pages.dart';
+import 'package:rsaverin/app/data/componen/my_colors.dart';
+import 'package:rsaverin/app/data/componen/my_font_size.dart';
+import 'package:rsaverin/app/routes/app_pages.dart';
 import 'custom_card.dart';
 
 class WidgetStraggeredGridView extends StatelessWidget {
@@ -274,7 +274,7 @@ class WidgetStraggeredGridView extends StatelessWidget {
                   height: 15,
                 ),
                 Text(
-                  "Info \nGP Care",
+                  "Info \nRS Averin",
                   textAlign: TextAlign.center,
                   style: GoogleFonts.nunito(
                     fontSize: MyFontSize.small3,
@@ -305,7 +305,7 @@ class WidgetStraggeredGridView extends StatelessWidget {
               child: Column(
                 children: [
                   const Text(
-                      "Anda Belum Terdaftar atau Login di Aplikasi SIRS Rumah Sakit Gading Pluit",
+                      "Anda Belum Terdaftar atau Login di Aplikasi SIRS Rumah Sakit Averin",
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center),

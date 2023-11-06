@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:gadingcare/app/data/componen/fetch_data.dart';
-import 'package:gadingcare/app/data/model/regist_rs/antrian_dokter.dart';
-import 'package:gadingcare/app/modules/detail-poli/controllers/detail_poli_controller.dart';
+import 'package:rsaverin/app/data/componen/fetch_data.dart';
+import 'package:rsaverin/app/data/model/regist_rs/antrian_dokter.dart';
+import 'package:rsaverin/app/modules/detail-poli/controllers/detail_poli_controller.dart';
 
 import '../../../../data/model/regist_rs/daftar_px.dart';
 import '../../../custom_dialog/dialog_registrasi_gagal_regis.dart';

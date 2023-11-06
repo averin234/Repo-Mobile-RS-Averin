@@ -1,21 +1,21 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:gadingcare/app/modules/onboard/controllers/onboard_controller.dart';
-import 'package:gadingcare/app/modules/onboard/views/widgets/pages/community/community_dark_card_content.dart';
-import 'package:gadingcare/app/modules/onboard/views/widgets/pages/community/community_light_card_content.dart';
-import 'package:gadingcare/app/modules/onboard/views/widgets/pages/community/community_text_column.dart';
-import 'package:gadingcare/app/modules/onboard/views/widgets/pages/education/education_dark_card_content.dart';
-import 'package:gadingcare/app/modules/onboard/views/widgets/pages/education/education_light_card_content.dart';
-import 'package:gadingcare/app/modules/onboard/views/widgets/pages/education/education_text_column.dart';
-import 'package:gadingcare/app/modules/onboard/views/widgets/pages/onboarding_page.dart';
-import 'package:gadingcare/app/modules/onboard/views/widgets/pages/work/work_dark_card_content.dart';
-import 'package:gadingcare/app/modules/onboard/views/widgets/pages/work/work_light_card_content.dart';
-import 'package:gadingcare/app/modules/onboard/views/widgets/pages/work/work_text_column.dart';
-import 'package:gadingcare/app/modules/onboard/views/widgets/next_page_button.dart';
-import 'package:gadingcare/app/modules/onboard/views/widgets/onboarding_page_indicator.dart';
-import 'package:gadingcare/app/modules/onboard/views/widgets/ripple.dart';
-import 'package:gadingcare/app/routes/app_pages.dart';
+import 'package:rsaverin/app/modules/onboard/controllers/onboard_controller.dart';
+import 'package:rsaverin/app/modules/onboard/views/widgets/pages/community/community_dark_card_content.dart';
+import 'package:rsaverin/app/modules/onboard/views/widgets/pages/community/community_light_card_content.dart';
+import 'package:rsaverin/app/modules/onboard/views/widgets/pages/community/community_text_column.dart';
+import 'package:rsaverin/app/modules/onboard/views/widgets/pages/education/education_dark_card_content.dart';
+import 'package:rsaverin/app/modules/onboard/views/widgets/pages/education/education_light_card_content.dart';
+import 'package:rsaverin/app/modules/onboard/views/widgets/pages/education/education_text_column.dart';
+import 'package:rsaverin/app/modules/onboard/views/widgets/pages/onboarding_page.dart';
+import 'package:rsaverin/app/modules/onboard/views/widgets/pages/work/work_dark_card_content.dart';
+import 'package:rsaverin/app/modules/onboard/views/widgets/pages/work/work_light_card_content.dart';
+import 'package:rsaverin/app/modules/onboard/views/widgets/pages/work/work_text_column.dart';
+import 'package:rsaverin/app/modules/onboard/views/widgets/next_page_button.dart';
+import 'package:rsaverin/app/modules/onboard/views/widgets/onboarding_page_indicator.dart';
+import 'package:rsaverin/app/modules/onboard/views/widgets/ripple.dart';
+import 'package:rsaverin/app/routes/app_pages.dart';
 import '../../login/views/constants.dart';
 
 class OnboardView extends GetView<OnboardController> {

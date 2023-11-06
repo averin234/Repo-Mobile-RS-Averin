@@ -3,7 +3,7 @@ import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/modules/detail-antrian/views/widgets/card_ticket_antrian.dart';
+import 'package:rsaverin/app/modules/detail-antrian/views/widgets/card_ticket_antrian.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import '../../../data/componen/my_font_size.dart';
@@ -36,74 +36,77 @@ class _DetailAntrianViewState extends State<DetailAntrianView> {
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
-        onWillPop: () async {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => DaftarAntrianView()), // Ganti dengan halaman home Anda
-      );
-      return true;
-    },
-    child: Scaffold(
-      backgroundColor: Theme.of(context).brightness == Brightness.light
-          ? Color(0xffecf8ff)
-          : Color(0xff2C3333),
-      body: SmartRefresher(
-        controller: _refreshController,
-        enablePullDown: true,
-        header: WaterDropMaterialHeader(),
-        onLoading: _onLoading,
-        onRefresh: _onRefresh,
-        child: CustomScrollView(
-          slivers: [
-            SliverAppBar(
-              backgroundColor: Theme.of(context).brightness == Brightness.light
-                  ? Colors.white
-                  : Color(0xff2C3333),
-              floating: true,
-              pinned: true,
-              snap: true,
-              stretch: true,
-              leading: IconButton(
-                  icon: const Icon(Icons.arrow_circle_left_rounded),
-                  color: Colors.blue,
-                  iconSize: 40,
-                  onPressed: () {
-                    Get.back();
-                  }),
-              title: Text(
-                "Detail Antrean",
-                style: GoogleFonts.nunito(
-                    fontSize: MyFontSize.large1, fontWeight: FontWeight.bold),
-              ),
-              actions: const [
-                // IconButton(
-                //     onPressed: () => Navigator.of(context)
-                //         .push(MaterialPageRoute(builder: (_) => const SearchPage())),
-                //     icon: const Icon(Icons.search))
-              ],
-              bottom: AppBar(
-                toolbarHeight: 0,
-              ),
-            ),
-            // Other Sliver Widgets
-            SliverList(
-              delegate: SliverChildListDelegate([
-                Column(
-                  children: AnimationConfiguration.toStaggeredList(
-                      duration: const Duration(milliseconds: 375),
-                      childAnimationBuilder: (widget) => ScaleAnimation(
-                            child: FadeInAnimation(
-                              child: widget,
-                            ),
-                          ),
-                      children: <Widget>[
-                        const CardTicketAntrian(),
-                      ]),
+      onWillPop: () async {
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+              builder: (context) =>
+                  DaftarAntrianView()), // Ganti dengan halaman home Anda
+        );
+        return true;
+      },
+      child: Scaffold(
+        backgroundColor: Theme.of(context).brightness == Brightness.light
+            ? Color(0xffecf8ff)
+            : Color(0xff2C3333),
+        body: SmartRefresher(
+          controller: _refreshController,
+          enablePullDown: true,
+          header: WaterDropMaterialHeader(),
+          onLoading: _onLoading,
+          onRefresh: _onRefresh,
+          child: CustomScrollView(
+            slivers: [
+              SliverAppBar(
+                backgroundColor:
+                    Theme.of(context).brightness == Brightness.light
+                        ? Colors.white
+                        : Color(0xff2C3333),
+                floating: true,
+                pinned: true,
+                snap: true,
+                stretch: true,
+                leading: IconButton(
+                    icon: const Icon(Icons.arrow_circle_left_rounded),
+                    color: Colors.blue,
+                    iconSize: 40,
+                    onPressed: () {
+                      Get.back();
+                    }),
+                title: Text(
+                  "Detail Antrean",
+                  style: GoogleFonts.nunito(
+                      fontSize: MyFontSize.large1, fontWeight: FontWeight.bold),
                 ),
-              ]),
-            ),
-          ],
+                actions: const [
+                  // IconButton(
+                  //     onPressed: () => Navigator.of(context)
+                  //         .push(MaterialPageRoute(builder: (_) => const SearchPage())),
+                  //     icon: const Icon(Icons.search))
+                ],
+                bottom: AppBar(
+                  toolbarHeight: 0,
+                ),
+              ),
+              // Other Sliver Widgets
+              SliverList(
+                delegate: SliverChildListDelegate([
+                  Column(
+                    children: AnimationConfiguration.toStaggeredList(
+                        duration: const Duration(milliseconds: 375),
+                        childAnimationBuilder: (widget) => ScaleAnimation(
+                              child: FadeInAnimation(
+                                child: widget,
+                              ),
+                            ),
+                        children: <Widget>[
+                          const CardTicketAntrian(),
+                        ]),
+                  ),
+                ]),
+              ),
+            ],
+          ),
         ),
-      ),
       ),
     );
   }

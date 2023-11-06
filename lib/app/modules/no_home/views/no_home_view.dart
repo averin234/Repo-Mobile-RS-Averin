@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:gadingcare/app/modules/shammer/nohome.dart';
+import 'package:rsaverin/app/modules/shammer/nohome.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/data/componen/fetch_data.dart';
-import 'package:gadingcare/app/data/componen/my_style.dart';
-import 'package:gadingcare/app/routes/app_pages.dart';
+import 'package:rsaverin/app/data/componen/fetch_data.dart';
+import 'package:rsaverin/app/data/componen/my_style.dart';
+import 'package:rsaverin/app/routes/app_pages.dart';
 import 'widgets/widget_cardinfopluit.dart';
 import 'widgets/widget_no_antri.dart';
 import 'widgets/widget_slider_poli.dart';

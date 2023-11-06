@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:gadingcare/app/routes/app_pages.dart';
+import 'package:rsaverin/app/routes/app_pages.dart';
 
 import '../../data/componen/data_regist_model.dart';
 import '../../data/componen/local_storage.dart';

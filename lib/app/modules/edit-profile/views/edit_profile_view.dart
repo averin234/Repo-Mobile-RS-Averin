@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/modules/edit-profile/views/widgets/card_edit.dart';
+import 'package:rsaverin/app/modules/edit-profile/views/widgets/card_edit.dart';
 import 'package:text_scroll/text_scroll.dart';
 
 import '../../../data/componen/my_font_size.dart';
@@ -76,7 +76,7 @@ class EditProfileView extends GetView<EditProfileController> {
                         height: 5,
                       ),
                       TextScroll(
-                        'Data diri anda terekam di database Rumah Sakit Gading Pluit, Mohon periksa kembali data diri anda, dan lakukan refresh saat melakukan perubahan data diri',
+                        'Data diri anda terekam di database Rumah Sakit Averin, Mohon periksa kembali data diri anda, dan lakukan refresh saat melakukan perubahan data diri',
                         textDirection: TextDirection.ltr,
                         style: GoogleFonts.nunito(
                             fontWeight: FontWeight.bold,

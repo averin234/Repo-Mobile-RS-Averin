@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:gadingcare/app/data/componen/local_storage.dart';
+import 'package:rsaverin/app/data/componen/local_storage.dart';
 
 class UniverseController extends GetxController {
   final getDataRegist = LocalStorages.getDataRegist.obs;

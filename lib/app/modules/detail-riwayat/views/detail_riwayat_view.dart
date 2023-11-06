@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/data/componen/fetch_data.dart';
-import 'package:gadingcare/app/modules/detail-riwayat/views/widgets/widget_Resep_view.dart';
-import 'package:gadingcare/app/modules/detail-riwayat/views/widgets/widget_detail_view.dart';
-import 'package:gadingcare/app/modules/detail-riwayat/views/widgets/widget_tindakan_view.dart';
-import 'package:gadingcare/app/modules/detail-riwayat/views/widgets/widget_title_resep.dart';
-import 'package:gadingcare/app/modules/detail-riwayat/views/widgets/widget_vitalsign_view.dart';
+import 'package:rsaverin/app/data/componen/fetch_data.dart';
+import 'package:rsaverin/app/modules/detail-riwayat/views/widgets/widget_Resep_view.dart';
+import 'package:rsaverin/app/modules/detail-riwayat/views/widgets/widget_detail_view.dart';
+import 'package:rsaverin/app/modules/detail-riwayat/views/widgets/widget_tindakan_view.dart';
+import 'package:rsaverin/app/modules/detail-riwayat/views/widgets/widget_title_resep.dart';
+import 'package:rsaverin/app/modules/detail-riwayat/views/widgets/widget_vitalsign_view.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import '../controllers/detail_riwayat_controller.dart';

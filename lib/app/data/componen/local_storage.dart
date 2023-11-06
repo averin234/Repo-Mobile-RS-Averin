@@ -1,11 +1,11 @@
 import 'package:get_storage/get_storage.dart';
-import 'package:gadingcare/app/data/componen/data_regist_model.dart';
-import 'package:gadingcare/app/data/componen/publics.dart';
-import 'package:gadingcare/app/data/model/login_and_regist/token.dart';
+import 'package:rsaverin/app/data/componen/data_regist_model.dart';
+import 'package:rsaverin/app/data/componen/publics.dart';
+import 'package:rsaverin/app/data/model/login_and_regist/token.dart';
 
 class LocalStorages {
-  static GetStorage boxToken = GetStorage('token_pluit');
-  static GetStorage boxDataRegist = GetStorage('dataRegist_pluit');
+  static GetStorage boxToken = GetStorage('token_gading');
+  static GetStorage boxDataRegist = GetStorage('dataRegist_gading');
   static Future<void> setToken(Token token) async {
     Token tokens = getToken;
     await boxToken.erase();

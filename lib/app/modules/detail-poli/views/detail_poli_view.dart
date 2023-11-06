@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 import 'package:get/get.dart';
-import 'package:gadingcare/app/data/componen/images.dart';
-import 'package:gadingcare/app/modules/detail-poli/views/widgets/card_form_poli.dart';
-import 'package:gadingcare/app/modules/detail-poli/views/widgets/widget_listview_poli_view.dart';
+import 'package:rsaverin/app/data/componen/images.dart';
+import 'package:rsaverin/app/modules/detail-poli/views/widgets/card_form_poli.dart';
+import 'package:rsaverin/app/modules/detail-poli/views/widgets/widget_listview_poli_view.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import '../../../data/componen/fetch_data.dart';

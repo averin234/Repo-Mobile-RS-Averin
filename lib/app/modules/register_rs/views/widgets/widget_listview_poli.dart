@@ -2,10 +2,10 @@ import 'package:dismissible_page/dismissible_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/data/componen/images.dart';
-import 'package:gadingcare/app/data/model/regist_rs/all_dokter_klinik.dart';
-import 'package:gadingcare/app/modules/profile-view/views/profile_view_view.dart';
-import 'package:gadingcare/app/modules/register_rs/views/widgets/jadwal_praktik.dart';
+import 'package:rsaverin/app/data/componen/images.dart';
+import 'package:rsaverin/app/data/model/regist_rs/all_dokter_klinik.dart';
+import 'package:rsaverin/app/modules/profile-view/views/profile_view_view.dart';
+import 'package:rsaverin/app/modules/register_rs/views/widgets/jadwal_praktik.dart';
 import 'package:text_scroll/text_scroll.dart';
 
 import '../../../../routes/app_pages.dart';
@@ -333,7 +333,7 @@ class CardListViewPoli extends StatelessWidget {
               child: Column(
                 children: [
                   const Text(
-                      "Anda Belum Terdaftar atau Login di Aplikasi SIRS Rumah Sakit Gading Pluit",
+                      "Anda Belum Terdaftar atau Login di Aplikasi SIRS Rumah Sakit Averin",
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center),

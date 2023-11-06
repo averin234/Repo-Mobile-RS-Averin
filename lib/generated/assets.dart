@@ -12,7 +12,7 @@ class Assets {
       'assets/images/registrasi_polik.png';
   static const String assetsImagesRewayatMr = 'assets/images/rewayat_mr.png';
   static const String assetsImagesSplash = 'assets/images/splash.svg';
-  static const String assetsLogoRspluit = 'assets/images/logo_gading.jpg';
+  static const String assetsLogoRspluit = 'assets/images/logo_averin.png';
   static const String assetsUpdateaplikasi = 'assets/updateaplikasi.png';
   static const String iconsBackground = 'assets/images/icons/background.svg';
   static const String iconsMedicalIcd10 =
@@ -86,8 +86,8 @@ class Assets {
   static const String imagesLogin = 'assets/images/login.gif';
   static const String imagesLoginBg = 'assets/images/login_bg.png';
   static const String imagesLoginSukses = 'assets/images/login_sukses.png';
-  static const String imagesLogoGading = 'assets/images/logo_gading.jpg';
-  static const String imagesLogoRsPluit = 'assets/images/logo_gading.jpg';
+  static const String imagesLogoGading = 'assets/images/logo_averin.png';
+  static const String imagesLogoRsPluit = 'assets/images/logo_averin.png';
   static const String imagesLogoRsPluit2 = 'assets/images/logo_rs_pluit_2.png';
   static const String imagesLogout = 'assets/images/logout.gif';
   static const String imagesLogoutApps = 'assets/images/logout_apps.png';

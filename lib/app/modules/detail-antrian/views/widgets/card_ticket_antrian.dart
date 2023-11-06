@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/modules/detail-antrian/controllers/detail_antrian_controller.dart';
-import 'package:gadingcare/app/routes/app_pages.dart';
+import 'package:rsaverin/app/modules/detail-antrian/controllers/detail_antrian_controller.dart';
+import 'package:rsaverin/app/routes/app_pages.dart';
 
 import 'garis.dart';
 

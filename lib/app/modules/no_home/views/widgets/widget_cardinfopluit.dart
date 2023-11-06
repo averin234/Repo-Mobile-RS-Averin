@@ -39,7 +39,7 @@ class _WidgetInfoState extends State<WidgetInfo> {
                 width: 20,
               ),
               Image.asset(
-                'assets/images/logo_gading.jpg',
+                'assets/images/logo_averin.png',
                 width: 80,
               ),
               Expanded(

@@ -1,37 +1,38 @@
 import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:gadingcare/app/data/model/login_and_regist/post_Ubah_Pass.dart';
+import 'package:rsaverin/app/data/model/login_and_regist/post_Ubah_Pass.dart';
 import 'package:get/get.dart';
-import 'package:gadingcare/app/data/componen/data_regist_model.dart';
-import 'package:gadingcare/app/data/componen/local_storage.dart';
-import 'package:gadingcare/app/data/componen/publics.dart';
-import 'package:gadingcare/app/data/model/antrian_rs/jadwal_px.dart';
-import 'package:gadingcare/app/data/model/antrian_rs/jadwal_px_detail.dart';
-import 'package:gadingcare/app/data/model/homepage/detail_klinik.dart';
-import 'package:gadingcare/app/data/model/homepage/poli.dart';
-import 'package:gadingcare/app/data/model/login_and_regist/akses_px.dart';
-import 'package:gadingcare/app/data/model/login_and_regist/daftar_px_baru.dart';
-import 'package:gadingcare/app/data/model/login_and_regist/token.dart';
-import 'package:gadingcare/app/data/model/mr_pasien/detailRiwayat.dart';
-import 'package:gadingcare/app/data/model/mr_pasien/listMRPX.dart';
-import 'package:gadingcare/app/data/model/profile_pasien/data_pasien.dart';
-import 'package:gadingcare/app/data/model/profile_pasien/data_px.dart';
-import 'package:gadingcare/app/data/model/regist_hemo/asuransi.dart';
-import 'package:gadingcare/app/data/model/regist_hemo/dokter_hemo.dart';
-import 'package:gadingcare/app/data/model/regist_rs/all_dokter_klinik.dart';
-import 'package:gadingcare/app/data/model/regist_rs/antrian_dokter.dart';
-import 'package:gadingcare/app/data/model/regist_rs/dokter_by_name.dart';
-import 'package:gadingcare/app/routes/app_pages.dart';
+import 'package:rsaverin/app/data/componen/data_regist_model.dart';
+import 'package:rsaverin/app/data/componen/local_storage.dart';
+import 'package:rsaverin/app/data/componen/publics.dart';
+import 'package:rsaverin/app/data/model/antrian_rs/jadwal_px.dart';
+import 'package:rsaverin/app/data/model/antrian_rs/jadwal_px_detail.dart';
+import 'package:rsaverin/app/data/model/homepage/detail_klinik.dart';
+import 'package:rsaverin/app/data/model/homepage/poli.dart';
+import 'package:rsaverin/app/data/model/login_and_regist/akses_px.dart';
+import 'package:rsaverin/app/data/model/login_and_regist/daftar_px_baru.dart';
+import 'package:rsaverin/app/data/model/login_and_regist/token.dart';
+import 'package:rsaverin/app/data/model/mr_pasien/detailRiwayat.dart';
+import 'package:rsaverin/app/data/model/mr_pasien/listMRPX.dart';
+import 'package:rsaverin/app/data/model/profile_pasien/data_pasien.dart';
+import 'package:rsaverin/app/data/model/profile_pasien/data_px.dart';
+import 'package:rsaverin/app/data/model/regist_hemo/asuransi.dart';
+import 'package:rsaverin/app/data/model/regist_hemo/dokter_hemo.dart';
+import 'package:rsaverin/app/data/model/regist_rs/all_dokter_klinik.dart';
+import 'package:rsaverin/app/data/model/regist_rs/antrian_dokter.dart';
+import 'package:rsaverin/app/data/model/regist_rs/dokter_by_name.dart';
+import 'package:rsaverin/app/routes/app_pages.dart';
 
 import '../model/login_and_regist/CheckUp.dart';
+
 class API {
   //---------------URL Demo-----------------------------
-  static const _url = 'https://rsgading-dev.sirs.co.id/';
+  static const _url = 'https://rsaverin.sirs.co.id/';
   //---------------URL Prod-----------------------------
   // static const _url = 'https://rsgading.sirs.co.id/';
   static const _baseUrl = '${_url}api/v1';
-  static const _kodeKlinik = 'C00002';
+  static const _kodeKlinik = 'C00004';
   static const _getToken = '$_baseUrl/get-token.php';
   static const _getAksesPx = '$_baseUrl/px-akses.php';
   static const _postDaftarPxBaru = '$_baseUrl/post-daftar-px-baru.php';
@@ -55,6 +56,7 @@ class API {
   static const _scanAntrianKlinik = '$_baseUrl/scan_antrian_klinik.php';
   static const _getDataPasien = '$_baseUrl/get-data-pasien.php';
   static const _getDataPx = '$_baseUrl/get-data-px.php';
+  static const _cekDataPx = '$_baseUrl/cek-data-px.php';
   static const _editPasienLama = '$_baseUrl/edit_pasien_lama.php';
   static const _editFotoPasien = '$_baseUrl/edit_foto_pasien.php';
   static const _editFotoKtp = '$_baseUrl/edit_foto_ktp.php';
@@ -73,6 +75,24 @@ class API {
     final obj = Token.fromJson(data);
     await LocalStorages.setToken(obj);
     print(obj.toJson());
+    return obj;
+  }
+
+  static Future<DataPx> cekDataPx({required String noKtp}) async {
+    var token = Publics.controller.getToken.value;
+    var data = {"nt": noKtp};
+    var response = await Dio().post(
+      _cekDataPx,
+      options: Options(
+        headers: {
+          "Content-Type": "application/json",
+          "X-Api-Token": token.token,
+        },
+      ),
+      data: data,
+    );
+    final json = jsonDecode(response.data);
+    final obj = DataPx.fromJson(json);
     return obj;
   }
 

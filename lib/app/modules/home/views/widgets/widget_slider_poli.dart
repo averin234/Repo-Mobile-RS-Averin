@@ -3,11 +3,11 @@ import 'package:dismissible_page/dismissible_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/data/componen/fetch_data.dart';
-import 'package:gadingcare/app/data/componen/images.dart';
-import 'package:gadingcare/app/data/model/regist_rs/all_dokter_klinik.dart';
-import 'package:gadingcare/app/modules/home/controllers/home_controller.dart';
-import 'package:gadingcare/app/modules/profile-view/views/profile_view_view.dart';
+import 'package:rsaverin/app/data/componen/fetch_data.dart';
+import 'package:rsaverin/app/data/componen/images.dart';
+import 'package:rsaverin/app/data/model/regist_rs/all_dokter_klinik.dart';
+import 'package:rsaverin/app/modules/home/controllers/home_controller.dart';
+import 'package:rsaverin/app/modules/profile-view/views/profile_view_view.dart';
 import 'package:text_scroll/text_scroll.dart';
 
 import '../../../register_rs/views/widgets/jadwal_praktik.dart';

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/data/componen/fetch_data.dart';
-import 'package:gadingcare/app/data/model/homepage/poli.dart';
-import 'package:gadingcare/app/modules/register_rs/controllers/register_rs_controller.dart';
-import 'package:gadingcare/app/modules/register_rs/views/widgets/widget_listview_poli.dart';
+import 'package:rsaverin/app/data/componen/fetch_data.dart';
+import 'package:rsaverin/app/data/model/homepage/poli.dart';
+import 'package:rsaverin/app/modules/register_rs/controllers/register_rs_controller.dart';
+import 'package:rsaverin/app/modules/register_rs/views/widgets/widget_listview_poli.dart';
 import 'package:search_page/search_page.dart';
 
 import '../../../../data/model/regist_rs/all_dokter_klinik.dart';

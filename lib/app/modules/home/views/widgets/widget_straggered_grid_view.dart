@@ -3,9 +3,9 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gadingcare/app/data/componen/my_colors.dart';
-import 'package:gadingcare/app/data/componen/my_font_size.dart';
-import 'package:gadingcare/app/routes/app_pages.dart';
+import 'package:rsaverin/app/data/componen/my_colors.dart';
+import 'package:rsaverin/app/data/componen/my_font_size.dart';
+import 'package:rsaverin/app/routes/app_pages.dart';
 import 'custom_card.dart';
 
 class WidgetStraggeredGridView extends StatelessWidget {
@@ -254,7 +254,7 @@ class WidgetStraggeredGridView extends StatelessWidget {
                   height: 0,
                 ),
                 Text(
-                  "Info \nGP Care",
+                  "Info \nRS Averin",
                   textAlign: TextAlign.center,
                   style: GoogleFonts.nunito(
                     fontSize: MyFontSize.small3,

@@ -49,14 +49,14 @@ android {
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion 24
-        targetSdkVersion 32
-        versionCode 62
-        versionName "1.1.5"
+        targetSdkVersion 33
+        versionCode 69
+        versionName "1.1.8"
         multiDexEnabled true
     }
     signingConfigs {
         release {
-            storeFile file('C:/Users/irwan/Averin_Gading.jks')
+            storeFile file('C:/Users/mtauf/Projects/Averin_Gading.jks')
             storePassword 'irwan123'
             keyAlias = 'key0'
             keyPassword 'irwan123'
